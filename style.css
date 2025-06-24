@@ -1,0 +1,118 @@
+body {
+    height: 100vh;
+    background-image: url("./Genshin_img/Back.jpg");
+    background-size: cover;
+}
+
+.wrap {
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 250px;
+    margin : 0 auto;
+    padding: 0 10px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.pings {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    justify-content: center;
+}
+
+.ping {
+    width: 100px;
+    height: 120px;
+    margin: 1px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 182, 193, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+    /* width에 border + padding 값도 포함 */
+
+    transform: skewX(-14deg);  /* x축 기준으로 왼쪽으로 14도 기울임 */
+    /* transform : 원근법 회전 크기 기울임 이동 */
+    /* skewX : x축 기울임 */
+
+    transition: transform .1s, background-color .6s;
+}
+
+
+.ping:hover {
+    background-color: lightgoldenrodyellow;
+    transform: skewX(-5deg) scale(1.2);
+}
+
+.ping .image {
+    width: 100%;
+    height: inherit;
+    background-position: center;
+    background-size: 60px;
+    background-repeat: no-repeat;
+}
+
+.ping .image:hover{
+    background-size: cover;
+}
+
+.ping .ping-name {
+    position: absolute;
+    top : 80%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: darkslategray;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;     /* 투명도 0 : 완전히 보이지 않음 */
+    transition: opacity 0.3s;
+    pointer-events: none;   /* 드래그나 클릭이 불가능, 없는 것처럼 동작 */
+}
+
+.ping .image:hover .ping-name {
+    opacity: 1;
+}
+
+
+.ping:nth-child(1) .image{ background-image: url("./Genshin_img/벤.webp"); }
+.ping:nth-child(2) .image{ background-image: url("./Genshin_img/유.webp"); }
+.ping:nth-child(3) .image{ background-image: url("./Genshin_img/진.webp"); }
+.ping:nth-child(4) .image{ background-image: url("./Genshin_img/다.webp"); }
+.ping:nth-child(5) .image{ background-image: url("./Genshin_img/리.webp"); }
+
+.ping:nth-child(6) .image{ background-image: url("./Genshin_img/종.webp"); }
+.ping:nth-child(7) .image{ background-image: url("./Genshin_img/감.webp"); }
+.ping:nth-child(8) .image{ background-image: url("./Genshin_img/소.webp"); }
+.ping:nth-child(9) .image{ background-image: url("./Genshin_img/응.webp"); }
+.ping:nth-child(10) .image{ background-image: url("./Genshin_img/탈.webp"); }
+
+.ping:nth-child(11) .image{ background-image: url("./Genshin_img/라이덴.webp"); }
+.ping:nth-child(12) .image{ background-image: url("./Genshin_img/쿠.webp"); }
+.ping:nth-child(13) .image{ background-image: url("./Genshin_img/키라라.webp"); }
+.ping:nth-child(14) .image{ background-image: url("./Genshin_img/토.webp"); }
+
+.ping:nth-child(15) .image{ background-image: url("./Genshin_img/나.webp"); }
+.ping:nth-child(16) .image{ background-image: url("./Genshin_img/데.webp"); }
+.ping:nth-child(17) .image{ background-image: url("./Genshin_img/방.webp"); }
+.ping:nth-child(18) .image{ background-image: url("./Genshin_img/알.webp"); }
+.ping:nth-child(19) .image{ background-image: url("./Genshin_img/타.webp"); }
+
+.ping:nth-child(20) .image{ background-image: url("./Genshin_img/푸.webp"); }
+.ping:nth-child(21) .image{ background-image: url("./Genshin_img/느.webp"); }
+.ping:nth-child(22) .image{ background-image: url("./Genshin_img/라.webp"); }
+.ping:nth-child(23) .image{ background-image: url("./Genshin_img/에.webp"); }
+
+.ping:nth-child(24) .image{ background-image: url("./Genshin_img/마.webp"); }
+.ping:nth-child(25) .image{ background-image: url("./Genshin_img/실.webp"); }
+.ping:nth-child(26) .image{ background-image: url("./Genshin_img/말.webp"); }
+.ping:nth-child(27) .image{ background-image: url("./Genshin_img/카치.webp"); }
+.ping:nth-child(28) .image{ background-image: url("./Genshin_img/키.webp"); }
+.ping:nth-child(29) .image{ background-image: url("./Genshin_img/올.webp"); }
